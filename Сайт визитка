@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      Следующий мета тег "viewport" очень важен для правильного отображения "отзывчивых сайтов" на разных устройствах.
+      Браузеры хотят быть очень услужливыми и пытатться помочь нам, отображая сайты совсем не так, как нужно.
+      Совсем как "Двое из ларца"
+
+      Например - попытаться отобразить всю страницу разом, хотя она должна прокручиваться на 10 экранов,
+      или увеличить шрифт непонятным образом, когда мы переворачиваем телефон горизонтально 
+      1. width=device-with - говорит браузеру "дружище, ширина моей страницы ровно такая, какой ширины твой экран.
+      Не надо ничего подгонять, я сам этим займусь"
+      2. initial-scale=1 - говорит браузеру "не вздумай ничего приближать/отдалять по своему усмотрению, я сам
+      озабочусь тем, чтобы при разной ширине всё отображалось хорошо"
+
+      https://www.w3schools.com/css/css_rwd_viewport.asp
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+       <!--
+    Тайтл отобржается как название закладки в барузере
+    -->
+    <title>РОЗАЛИЯ</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" sizes="any" />
+    <link rel="stylesheet" href="./normalize.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="name">РОЗАЛИЯ УРАЗМЕТОВА</div>
+
+    <div class="block">
+      <div class="block-title">на связи</div>
+      <div class="block-entries">
+        <div class="entry">
+          <a href="http://t.me/RozaliyaQA" target="_blank"> telegram</a>
+        </div>
+        <div class="entry">
+          <a href="mailto:https://mail.ru">rozaliya.1@mail.ru</a>
+        </div>
+        <div class="entry">
+          <a href="https://github.com/RozaliyaQA" target="_blank">git</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-title">чем занимаюсь</div>
+      <div class="block-entries">
+        <div class="entry"> Тестирую</div>
+        <div class="block-entries">
+          <div class="entry"> Воспитываю кота Элвиса</div>
+          <div class="block-entries">
+            <div class="entry"> Учу английский</div>
+            <div class="block-entries">
+              <div class="entry"> Читаю Хабр</div>
+      </div>
+      
+      </div>
+    </div>
+  </body>
+</html>
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/*
+  Загружаем шрифт Roboto
+*/
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap");
+
+/*
+  Простейший reset - удостоверимся, что у всех элементов нулевые
+  отступы и границы элементов считаются вместе со всеми отступами (box-sizing)
+
+  https://learn.javascript.ru/box-sizing
+
+  Здесь же пропишем свойство, которое преобразует регистр текста в верхний
+  для всех элементов
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+/*
+  В CSS можно делать переменные., нпапример задать для text-color значение #f0f0f0, а потом ниже 
+  использовать, например color: var(--text-color);
+
+  Разместим наши несколько css-переменных в псевдо-классе :root
+  css-переменные можно размещать по факту в любом элементе, в зависимости от того,
+  какая специфичность нам нужна. Так как в этом проекте мы обходимся только переменными цвета, которые 
+  распространяются на весь документ - размещаем их в самом корне, :root всегда является самым
+  верхним элементом дерева
+
+  https://css-tricks.com/almanac/selectors/r/root/
+*/
+
+:root {
+  --text-color: #f0f0f0;
+  --gray-color: rgba(240, 240, 240, 0.6);
+  --background-color: #101010;
+}
+
+html {
+  cursor: url("./cat_default.png") 40 45, auto;
+}
+
+body {
+  padding: 10vw 3.333vw;
+  padding-bottom: 13.333vw;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.1vw;
+  background-color: var(--background-color);
+  color: white;
+
+  /* 
+  Меняем стандартный курсор на милого котика, а так как котик у нас круглый,
+  а стрелка мыши срабатывает самым верхним углом (там её хотспот), а с котиком это 
+  неудобно - перенесём хотспот на его нос - просто сместим top-left хотспота в пикселях
+  в центр мордочки
+  
+  https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
+  */
+}
+
+/*
+Вёрстка в проекте mobile-first - сперва мы указываем все размеры и свойства для 
+мобильного отображения (viewport), потом с помощью медиа-query ниже меняем их на 
+больших экранах
+
+https://developer.mozilla.org/ru/docs/Web/CSS/@media
+*/
+.name {
+  font-size: 12.778vw;
+  line-height: 100%;
+}
+
+.block {
+  margin-top: 13.333vw;
+}
+
+.block-title {
+  color: rgba(240, 240, 240, 0.6);
+  line-height: 5.208vw;
+  font-size: 4.444vw;
+  margin-bottom: 3.333vw;
+}
+
+.entry {
+  line-height: 7.814vw;
+  font-size: 6.667vw;
+  margin-bottom: 1.667vw;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  /*
+  Поменяем курсор на котика из Шрека при наведении на ссылку
+  Важно сделать это здесь, а не в псевдо-классе :hover
+  Иначе при наведении на ссылку могут быть крохотные моменты,
+  когда курсор сбрасывается к дефолтной "руке"
+  */
+  cursor: url("./cat_link.png") 40 45, auto;
+}
+
+a:hover {
+  color: var(--gray-color);
+}
+
+/* 
+Медиа query для планшетов, срабатывает, когда минимальный размер окна достигает 1024px
+*/
+
+@media screen and (min-width: 1024px) {
+  body {
+    padding: 4.883vw;
+    padding-bottom: 9.375vw;
+  }
+
+  .name {
+    font-size: 9.375vw;
+  }
+
+  .block {
+    margin-top: 9.375vw;
+  }
+
+  .block-title {
+    line-height: 3.434vw;
+    font-size: 2.93vw;
+    margin-bottom: 2.344vw;
+  }
+
+  .entry {
+    line-height: 8.24vw;
+    font-size: 7.031vw;
+    margin-bottom: 0;
+  }
+}
+
+/* Медиа query для десктопов, срабатывает при достижении 1440px  */
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 3.472vw;
+    padding-bottom: 8.333vw;
+  }
+
+  .name {
+    font-size: 10vw;
+    margin-bottom: 1.667vw;
+  }
+
+  .block {
+    margin-top: 8.333vw;
+  }
+
+  .block-title {
+    line-height: 3.906vw;
+    font-size: 3.333vw;
+    margin-bottom: 2.5vw;
+  }
+
+  .entry {
+    line-height: 7.813vw;
+    font-size: 6.667vw;
+  }
+}
